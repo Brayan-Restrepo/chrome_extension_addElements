@@ -1,0 +1,41 @@
+{
+  "name": "Add Element 3",
+  "version": "1.1",
+  "description": "Description",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "",
+  "background": {
+    "scripts": ["deployContoller.js", "api/api.js", "controllers/domController.js"],
+    "persistent": false
+  },
+  "commands": {
+    "toggle-feature-addForm": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+A"
+       },
+      "description": "Añade el formulario"
+    },
+    "toggle-feature-deleteForm": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+       },
+      "description": "Eliminar el formulario"
+    }
+  },
+  "page_action": {
+    "default_popup": "menu/popup.html",
+    "default_icon": {
+      "16": "img/desarrollo.png",
+      "32": "img/desarrollo.png",
+      "48": "img/desarrollo.png",
+      "128": "img/desarrollo.png"
+    }
+  },
+  "icons": {
+    "16": "img/desarrollo.png",
+    "32": "img/desarrollo.png",
+    "48": "img/desarrollo.png",
+    "128": "img/desarrollo.png"
+  },
+  "manifest_version": 2
+}
